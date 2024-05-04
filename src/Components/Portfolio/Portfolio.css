@@ -1,0 +1,153 @@
+#header {
+  width: 100%;
+  height: 100lvh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../Assets/background.png);
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+nav ul li {
+  display: inline;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  background: #8c52ff;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 20%;
+}
+
+.header-text h1 {
+  font-size: 54px;
+  margin-top: 20px;
+}
+
+.header-text h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-style: italic;
+  font-family: monospace;
+  text-decoration: underline solid #8c52ff 5px;
+}
+
+.header-text p {
+  font-size: 28px;
+  text-decoration: overline solid #8c52ff 5px;
+}
+
+.header-text span {
+  color: #8c52ff;
+}
+
+/* About Style */
+#about {
+  padding: 80px 0;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  flex-basis: 35%;
+}
+
+.col-1 img {
+  width: 100%;
+  border-radius: 45%;
+}
+
+.col-2 {
+  flex-basis: 60%;
+  text-align: justify;
+}
+
+.col-2 h1 {
+  color: #fff;
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-title {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-title::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #611b84;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.5s;
+}
+
+.tab-title.active::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.tab-contents ul li span {
+  color: #611b84;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tab-contents {
+  display: block;
+}
